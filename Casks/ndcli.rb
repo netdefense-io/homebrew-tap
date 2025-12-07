@@ -3,7 +3,7 @@ cask "ndcli" do
   name "ndcli"
   desc "NetDefense CLI tool"
   homepage "https://github.com/netdefense-io/ndcli-releases"
-  version "0.1.0-beta.4"
+  version "0.1.0-beta.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "ndcli" do
   on_macos do
     on_intel do
       url "https://github.com/netdefense-io/ndcli-releases/releases/download/v#{version}/ndcli_#{version}_darwin_amd64.tar.gz"
-      sha256 "ed9258de5609627c277f6834774ba50bd82a95081381f3ad3d7ea77c920470d1"
+      sha256 "c9e1cf0bdc3e5d93efb95bc28791897430da6129f2cf4899408ecef102ede844"
     end
     on_arm do
       url "https://github.com/netdefense-io/ndcli-releases/releases/download/v#{version}/ndcli_#{version}_darwin_arm64.tar.gz"
-      sha256 "5e7daf4d5e0743ab18c1dff35e3316ec22cb0b23a75ecb74ff10160bd85fb4ee"
+      sha256 "741e5e3e8a25d25408eb1cb664f095ae6bc260a9672a00c55698a19129b77786"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/netdefense-io/ndcli-releases/releases/download/v#{version}/ndcli_#{version}_linux_amd64.tar.gz"
-      sha256 "ac2c2426c6e204f5853537bfc2a5532703976e4942be4741a8608a476a23165d"
+      sha256 "2ad58e60ebbd8c798e1747821d9f7fced2b1c8bd34d9fa3f3aefa54a00f3fbd5"
     end
     on_arm do
       url "https://github.com/netdefense-io/ndcli-releases/releases/download/v#{version}/ndcli_#{version}_linux_arm64.tar.gz"
-      sha256 "947d4539aaa44fd1f98c2d0b04cbcd05fbbfdfd7096cc121c0ccea006058d1cc"
+      sha256 "9db017e742a0561c94066233d695efe8a343f82e1c1fb7ec157299d851a59ac8"
     end
   end
 
