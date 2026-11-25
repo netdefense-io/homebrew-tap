@@ -5,13 +5,13 @@
 class Ndcli < Formula
   desc "NetDefense CLI tool"
   homepage "https://github.com/netdefense-io/NDCLI"
-  version "1.50.2"
+  version "1.50.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/netdefense-io/ndcli-releases/releases/download/v1.50.2/ndcli_1.50.2_darwin_amd64.tar.gz"
-      sha256 "faa4c3f426aa12a01d356fdaeb42a4b3d386c4b2bb7ce2e99458a0e42a21c4cb"
+      url "https://github.com/netdefense-io/ndcli-releases/releases/download/v1.50.3/ndcli_1.50.3_darwin_amd64.tar.gz"
+      sha256 "647644d461283d6a64d3d21fb2858905ea3a2dbd4052aaec7955fd3c12297103"
 
       define_method(:install) do
         bin.install "ndcli"
@@ -22,8 +22,8 @@ class Ndcli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/netdefense-io/ndcli-releases/releases/download/v1.50.2/ndcli_1.50.2_darwin_arm64.tar.gz"
-      sha256 "a2ac8fdb9940bb451ad42411613320b96e490fc0d45712cc778634eac2cadc56"
+      url "https://github.com/netdefense-io/ndcli-releases/releases/download/v1.50.3/ndcli_1.50.3_darwin_arm64.tar.gz"
+      sha256 "c0f5c1b4decbccc3588f12cdc37e5c915e4eb36bc4e2ece1a6370624ed03019c"
 
       define_method(:install) do
         bin.install "ndcli"
@@ -37,8 +37,8 @@ class Ndcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/netdefense-io/ndcli-releases/releases/download/v1.50.2/ndcli_1.50.2_linux_amd64.tar.gz"
-      sha256 "6112a3ca53dd6664957806003025fccb14ce244b443a844e01afb5f291e0eef2"
+      url "https://github.com/netdefense-io/ndcli-releases/releases/download/v1.50.3/ndcli_1.50.3_linux_amd64.tar.gz"
+      sha256 "de4f67de1a3dc8a1e240b6324494fc07271e7437264a66ae38baa1f13d9b2978"
       define_method(:install) do
         bin.install "ndcli"
         bin.install "netdefense-mcp"
@@ -48,8 +48,8 @@ class Ndcli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/netdefense-io/ndcli-releases/releases/download/v1.50.2/ndcli_1.50.2_linux_arm64.tar.gz"
-      sha256 "163ecb7700c338eebaca203e149618fc072c52bc2f1ea940bdef071c529f88b2"
+      url "https://github.com/netdefense-io/ndcli-releases/releases/download/v1.50.3/ndcli_1.50.3_linux_arm64.tar.gz"
+      sha256 "315e4b84dddb274e15c8ef663a11a46a021f9c5201dc9d5bcb4cfb32ce9f156c"
       define_method(:install) do
         bin.install "ndcli"
         bin.install "netdefense-mcp"
